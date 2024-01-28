@@ -6,7 +6,6 @@ def threading_informations():
     print(Thread.current_thread().ident)
     print(Thread.current_thread().is_alive())
 class Example:
-    @classmethod
     def display(self,n,msg):
         for i in range(n):
             print(msg)
@@ -16,10 +15,10 @@ class Example:
 
 e1 = Example()
 
-t1 = Thread(target=e1.display,args=(4,"Hello")) #new thread here
-t2 = Thread(target=e1.display_unique,args=(5,))
-t3 = Thread(target=e1.display_unique, kwargs={'x':4})
-t4 = Thread(target=e1.display, kwargs={"n":4,"msg":"Carlos"})
+t1 = Thread(target=e1.display,args=(30,"Hello")) #new thread here
+t2 = Thread(target=e1.display_unique,args=(30,))
+t3 = Thread(target=e1.display_unique, kwargs={'x':40})
+t4 = Thread(target=e1.display, kwargs={"n":40,"msg":"Carlos"})
 
 t1.start()
 t2.start()
