@@ -18,7 +18,7 @@ e1 = Example()
 t1 = Thread(target=e1.display,args=(30,"Hello")) #new thread here
 t2 = Thread(target=e1.display_unique,args=(30,))
 t3 = Thread(target=e1.display_unique, kwargs={'x':40})
-t4 = Thread(target=e1.display, kwargs={"n":40,"msg":"Carlos"})
+t4 = Thread(target=e1.display, kwargs={"n":30,"msg":"Carlos"})
 
 t1.start()
 t2.start()
