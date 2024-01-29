@@ -12,7 +12,7 @@ def show():
 
 t1 = Thread(target=display)
 t2 = Thread(target=show)
-t1.name="T1"
+t1.name="T1"    
 
 print(f"Thread 1 is alive: {t1.is_alive()}")
 t1.start()
