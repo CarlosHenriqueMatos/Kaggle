@@ -1,3 +1,5 @@
+# this code was made from https://www.youtube.com/watch?v=ei9-eCyon7I&ab_channel=Programa%C3%A7%C3%A3oDin%C3%A2mica
+# adapted by Programação Dinamica youtube channel
 # atributos
 #1 . numerador ; 2 denominador
 
@@ -21,7 +23,7 @@ class Frac:
         num = self.num * outra.den + outra.den*self.den
         den = self.den+outra.den
         return Frac(num,den)
-      
+    
     def sub(self, outra:float)-> float:
         return self.add(outra.reverse())
 
@@ -47,7 +49,7 @@ class Frac:
         return representation
     
     def __repr__(self:float) -> str:
-        representation = "Fracao({},{})".format(self.num,
+        representation = "Fracao({}/{})".format(self.num,
                                                  self.den)
         return representation
     
